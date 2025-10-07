@@ -1,16 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>My Personal Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       background: #fff;
       color: #000;
       max-width: 600px;
-      font-family: 'Noto Sans';font-size: 22px;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 22px;
       margin: 4rem auto;
       padding: 0 1rem;
       line-height: 1.6;
@@ -32,63 +33,96 @@
     hr {
       margin: 2rem 0;
     }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill {
+      background: #f0f0f0;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
-    <div class="container">
-      <header class="section">
-        <h1>Your Name</h1>
-        <div class="contact">
-          <span>Email: your.email@example.com</span>
-          <span>Phone: (123) 456-7890</span>
-          <span>LinkedIn: linkedin.com/in/yourname</span>
-          <span>GitHub: github.com/yourhandle</span>
-        </div>
-      </header>
-  
-      <section class="section">
-        <h2>Professional Summary</h2>
-        <p>Experienced [Your Title] with a strong background in [Industry/Skills], passionate about solving complex problems and delivering smart, scalable solutions.</p>
-      </section>
-  
-      <section class="section">
-        <h2>Experience</h2>
-        <div class="job">
-          <div class="job-title">Senior Developer - Tech Company</div>
-          <div class="job-duration">Jan 2021 – Present</div>
-          <ul>
-            <li>Led development of scalable microservices architecture.</li>
-            <li>Mentored junior developers and improved onboarding process.</li>
-            <li>Optimized application performance by 30% using caching strategies.</li>
-          </ul>
-        </div>
-        <div class="job">
-          <div class="job-title">Software Engineer - Startup Inc.</div>
-          <div class="job-duration">May 2018 – Dec 2020</div>
-          <ul>
-            <li>Built responsive front-end interfaces using React.</li>
-            <li>Collaborated with cross-functional teams on agile sprints.</li>
-          </ul>
-        </div>
-      </section>
-  
-      <section class="section">
-        <h2>Education</h2>
-        <p><strong>B.Sc. in Computer Science</strong>, XYZ University — 2014–2018</p>
-      </section>
-  
-      <section class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-          <span class="skill">JavaScript</span>
-          <span class="skill">React</span>
-          <span class="skill">Python</span>
-          <span class="skill">Node.js</span>
-          <span class="skill">SQL</span>
-          <span class="skill">Docker</span>
-          <span class="skill">Git</span>
-        </div>
-      </section>
-    </div>
-  </body>
+  <div class="container">
+    <header class="section">
+      <h1>Your Name</h1>
+      <div class="contact">
+        <a href="mailto:your.email@example.com">
+          <i class="fa-solid fa-envelope"></i> your.email@example.com
+        </a>
+        <a href="tel:+11234567890">
+          <i class="fa-solid fa-phone"></i> (123) 456-7890
+        </a>
+        <a href="https://linkedin.com/in/yourname" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> linkedin.com/in/yourname
+        </a>
+        <a href="https://github.com/yourhandle" target="_blank">
+          <i class="fa-brands fa-github"></i> github.com/yourhandle
+        </a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>Experienced [Your Title] with a strong background in [Industry/Skills], passionate about solving complex problems and delivering smart, scalable solutions.</p>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-title">Senior Developer - Tech Company</div>
+        <div class="job-duration">Jan 2021 – Present</div>
+        <ul>
+          <li>Led development of scalable microservices architecture.</li>
+          <li>Mentored junior developers and improved onboarding process.</li>
+          <li>Optimized application performance by 30% using caching strategies.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="job-title">Software Engineer - Startup Inc.</div>
+        <div class="job-duration">May 2018 – Dec 2020</div>
+        <ul>
+          <li>Built responsive front-end interfaces using React.</li>
+          <li>Collaborated with cross-functional teams on agile sprints.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p><strong>B.Sc. in Computer Science</strong>, XYZ University — 2014–2018</p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Python</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
